@@ -10,7 +10,7 @@ app.listen(PORT,function(){
 
 app.get('/api/message',function(req, res){
     var nombre=req.param('name');
-    if(!nombre){
+    if(nombre){
         res.send('<style>body{background-color: #f5f5f5;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;color: #333;}</style></head><center><h1>'+'Hola '+nombre+'</h1></center>');
 
     } else {
