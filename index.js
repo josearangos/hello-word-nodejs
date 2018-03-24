@@ -10,7 +10,7 @@ app.listen(PORT,function(){
 
 app.get('/api/message',function(req, res){
     var nombre=req.param('name');
-    res.send('<center><h1>'+'hola: '+nombre+'</h1></center>');
+    res.send('<style>background-color: #f5f5f5;</style><center><h1>'+'hola: '+nombre+'</h1></center>');
 });
 
 
